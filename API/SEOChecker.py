@@ -1,14 +1,102 @@
-# We import SEORules to call to the methods that perform the verifications for each SEO rules
 # We import HTMLParserAPI to parse the HTML code of our page
-# We import ConsoleStyles to give style to the messages in our report
+from utils import HTMLParserAPI as Hp
+# We import SEORules to call to the methods that perform the verifications for each SEO rules
 from API import SEORules as Sr
-from utils import ConsoleStyles as Cs, HTMLParserAPI as Hp
+# We import ConsoleStyles to give style to the messages in our report
+from utils import ConsoleStyles as Cs
 # We import webdriver to get the source code of the page from our webdriver
 from selenium import webdriver
+from datetime import datetime
 
 
-def preliminar_seo_rules_check(url: str = None, browser: webdriver = None, rules: list = None, languages: list = None)\
-        -> (bool, str):
+def chrono_decorator(func):
+    """
+    Decorator for function preliminar_seo_rules_check so we add the moment in which we start this process and add it
+    to the report and then add the moment at which this process finishes. Also, we write this report into a file
+    in folder reports
+    :param func: Function that we will execute in this decorator, in this case preliminar_seo_rules_check
+    :return: chrono_wapper method
+    """
+
+    def chrono_wrapper(url: str = None, browser: webdriver = None, rules: list = None,
+                       languages: list = None) -> (bool, str):
+        """
+        This is the wrapper for function preliminar_seo_rules_check
+        :param url: A string to the URL we want to check, by default None
+        :param browser: An instance of webdriver we can use alternatively to get the source code of our page, by default
+        None
+        :param rules: This is a list where we add the number of the rules we want to check, by default None in which
+        case we will set this list to [1,2,3,4,5,6] so every rule is checked
+        :param languages: In case we want to check rule for hreflang (rule 6) we need to provide a list of hreflang
+        code our page should have
+        :return: We return a boolean parameter that is true is all rules checked return True and a string with a report
+        with the information about how the process went
+        """
+        # We get the current instante, date and time
+        start = datetime.now()
+        # We convert it to string with the following format
+        start_str = start.strftime('%Y-%m-%d_%H-%M-%S')
+        # We get the timestamp of the start of this process
+        timestamp_start = datetime.timestamp(start)
+        # We add the instant in which this process starts to our report
+        report = "SEO check started at {0}\n".format(start_str)
+        # We call to preliminar_seo_rules_check and store the variables it returns
+        result, aux_report = func(url, browser, rules, languages)
+        # We add the report returned to our current report
+        report += aux_report
+        # We get the instant in which this process finished
+        finish = datetime.now()
+        # We turn this into string
+        finish_str = finish.strftime('%Y-%m-%d_%H-%M-%S')
+        # We get the timestamp of the moment in which this process finished
+        timestamp_finish = datetime.timestamp(finish)
+        # We add this moment to our report
+        report += "SEO check finished at {0}\n".format(finish_str)
+        # We add how many second this process took subtracting the two timestamps
+        report += "It took {0} seconds".format(timestamp_finish - timestamp_start)
+        # We create a variable to None, but this will contain our file
+        f = None
+        # We create the variable that will contain the version of the url we will use in the name of the file
+        v_url = ""
+        # We will make all the process of storing our report to file in a try-except structure
+        try:
+            # If url is not None, it is because we used it to create the file
+            if url is not None:
+                v_url = url
+            elif browser is not None:
+                # If browser is not None, it's because we are using an instance of webdriver to get the url
+                v_url = browser.current_url
+            # We remove every character in the URL that can't be used in the name of a file
+            v_url = v_url.replace("//", "")
+            v_url = v_url.replace(".", "")
+            v_url = v_url.replace(":", "")
+            v_url = v_url.replace("/", "")
+            # We generate the name of the file using the url and also the moment in which we started this process
+            file_name = "./reports/" + v_url + finish_str + "_" + ".txt"
+            # We open the file in writing mode
+            f = open(file_name, "+w")
+            # We write the string report into the file
+            f.write(report)
+        # We catch some possible exceptions and print the information about them
+        except FileNotFoundError as e:
+            print(e)
+        except Exception as e:
+            print(e)
+        # We always do what's inside a finally block
+        finally:
+            # If f is not None, we were able to open and create the file
+            if f is not None:
+                # We close the file
+                f.close()
+        # We return result and report
+        return result, report
+    # We have to return the wrapper function to complete this decorator
+    return chrono_wrapper
+
+
+@chrono_decorator
+def preliminar_seo_rules_check(url: str = None, browser: webdriver = None, rules: list = None,
+                               languages: list = None) -> (bool, str):
     """
     This method gets the string url and performs a request to get the HTML code or takes an instance of webdriver and
     gets the page source code from it, parses it and checks the rules set in the list rules with number (1 to 6) and

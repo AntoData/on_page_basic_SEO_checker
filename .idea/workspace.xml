@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10ddd722-64a7-4318-ba54-ee173bd0dcb6" name="Default Changelist" comment="" />
+    <list default="true" id="10ddd722-64a7-4318-ba54-ee173bd0dcb6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/SEOChecker.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/SEOChecker.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Basic_on_page_SEO_checker" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1a5Z1MwFiGs0oW6s9TH0IozwvI4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -27,6 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/utils" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -89,64 +94,63 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586695574652" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1586695898681">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1586722626347">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586695898681" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1586695898681">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586722626347" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1586722626346">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586695898681" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1586695898681">
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586722626346" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1586722626346">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586695898681" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1586695898681">
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586722626346" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1586722626346">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586695898681" />
-    <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1586695288500">
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586722626346" />
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1586711004254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586695288500" />
-    <state width="1345" height="223" key="GridCell.Tab.1.center" timestamp="1586695288500">
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586711004254" />
+    <state width="1345" height="223" key="GridCell.Tab.1.center" timestamp="1586711004254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586695288500" />
-    <state width="1345" height="223" key="GridCell.Tab.1.left" timestamp="1586695288500">
+    <state width="1345" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586711004254" />
+    <state width="1345" height="223" key="GridCell.Tab.1.left" timestamp="1586711004254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586695288500" />
-    <state width="1345" height="223" key="GridCell.Tab.1.right" timestamp="1586695288500">
+    <state width="1345" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586711004254" />
+    <state width="1345" height="223" key="GridCell.Tab.1.right" timestamp="1586711004254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586695288500" />
+    <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586711004254" />
+    <state x="186" y="9" key="SettingsEditor" timestamp="1586708051115">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586708051115" />
     <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1586640941656">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728@0.0.1366.728" timestamp="1586640941656" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1586695327543">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1586708019845">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586695327543" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586708019845" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/API/SEOChecker.py</url>
-          <line>10</line>
+          <line>97</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Test.py</url>
           <line>15</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/API/SEORules.py</url>
-          <line>398</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
