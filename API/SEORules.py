@@ -396,10 +396,15 @@ def rule_6_hreflang(html_parser: BeautifulSoup, languages: list) -> (bool, str):
         # We add False to the result of this process
         result &= False
     # Now, we finally check if we found an attribute rel='canonical' and every language in hreflang once
-    for v_key in search.keys():
+    # We create a list with canonical
+    v_keys = ["canonical"]
+    # We add the list of languages/hreflang codes passed as parameter
+    v_keys = v_keys + languages
+    # We check if we found all of these
+    for v_key in v_keys:
         # If the one of the elements in language or canonical were not added to the dictionary search is because we
         # didn't find it, which is not correct
-        if search[v_key] is None or search[v_key] == 0:
+        if v_key not in search.keys() or search[v_key] is None or search[v_key] == 0:
             # We add the corresponding information to the string report
             if v_key == "canonical":
                 report += "No link with canonical\n"
