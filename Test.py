@@ -5,7 +5,7 @@ Example of how to use this SEO checker
 from API.SEOChecker import preliminar_seo_rules_check
 
 # We will perform this test in this url
-url = "https://www.worldometers.info/coronavirus/"
+url = "https://www.ladrupalera.com/es"
 # We will check if it is developed for the following hreflang codes
 languages = ["es", "en"]
 # We call this method but we don't give it the parameter rules, so it will check all rules

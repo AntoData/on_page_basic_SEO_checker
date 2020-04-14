@@ -186,7 +186,8 @@ def preliminar_seo_rules_check(url: str = None, browser: webdriver = None, rules
             # We add a header stating this information to our report
             report += Cs.ConsoleStyles.BOLD + "Checking no follow links:\n" + Cs.ConsoleStyles.END
             # We add the report result of this method to our overall report
-            report += Sr.rule_5_no_follow_links(html_parser) + "\n\n"
+            aux_report, no_links = Sr.rule_5_no_follow_links(html_parser)
+            report += aux_report + "\n\n"
         # If rule is 6, we have to check the tags link within tag head and check if we have one canonical link and
         # also one for each language set in our list languages, so we should use it in this case.
         if rule == 6:

@@ -1,7 +1,7 @@
-SEO check started at 2020-04-12_19-03-43
+SEO check started at 2020-04-13_21-57-15
 [1mChecking tag title:
 [0mOnly one tag title within the tag head
-[<title>Coronavirus Update (Live): 1,827,147 Cases and 112,410 Deaths from COVID-19 Virus Pandemic - Worldometer</title>]
+[<title>Coronavirus Update (Live): 1,912,438 Cases and 118,683 Deaths from COVID-19 Virus Pandemic - Worldometer</title>]
 Title is longer than 70 characters
 [91mKO
 
@@ -24,7 +24,7 @@ Tag meta with name = 'description' is shorter than or equal to 155
       h3: - Confirmed Cases and Deaths by Country, Territory, or Conveyance
     h2: - Latest Updates
       h3: - [91mX Missing tag! X[0m
-        h4: - April 12 (GMT)
+        h4: - April 13 (GMT)
     h2: - How dangerous is the virus?
     h2: - How contagious is the Wuhan Coronavirus? (Ro) 
     h2: - Fatality Rate (case fatality ratio or CFR) of the Wuhan Coronavirus
@@ -57,7 +57,10 @@ No tags 'link' have the attribute rel='nofollow'
 
 [1mChecking href and hreflang tags:
 [0mNo canonical link or links with hreflang in the right languages
+No link with canonical
+No link with reflang: es
+No link with reflang: en
 [91mKO
 
-[0mSEO check finished at 2020-04-12_19-03-45
-It took 2.229130983352661 seconds
+[0mSEO check finished at 2020-04-13_21-57-17
+It took 2.1938350200653076 seconds

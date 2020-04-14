@@ -276,12 +276,14 @@ def rule_4_img_alt(html_parser: BeautifulSoup) -> (bool, str):
     return result, report
 
 
-def rule_5_no_follow_links(html_parser: BeautifulSoup) -> str:
+def rule_5_no_follow_links(html_parser: BeautifulSoup) -> (str,list):
     """
     This method returns a report with all links in our page that are no follow
     :param html_parser: BeautifulSoup object with the HTML of our page parsed
     :return: A string report with the links that are no follow
     """
+    # We create the list where we will return the links that are no follow
+    no_follows = []
     # We get all tags a that have an attribute rel='nofollow'
     as_nofollow = html_parser.find_all("a", {"rel": "nofollow"})
     # We check if there are more tags a that are no follow and add the corresponding message
@@ -289,8 +291,9 @@ def rule_5_no_follow_links(html_parser: BeautifulSoup) -> str:
         report = "The following links using the tag 'a' have attribute rel='nofollow': \n"
     else:
         report = "No links using the tag 'a' have attribute rel='nofollow' \n"
-    # We go through every tag a that is no follow and add it to the report
+    # We go through every tag a that is no follow and add it to the report and the list
     for a_nofollow in as_nofollow:
+        no_follows.append(a_nofollow)
         report += "{0}\n".format(a_nofollow)
     # We get all tags link that are no follow
     links_nofollow = html_parser.find_all("link", {"rel": "nofollow"})
@@ -300,11 +303,12 @@ def rule_5_no_follow_links(html_parser: BeautifulSoup) -> str:
         report += "The following tags 'link' have attribute rel='nofollow': \n"
     else:
         report += "No tags 'link' have the attribute rel='nofollow' \n"
-    # We go through every tag link that are no follow and add it to the report
+    # We go through every tag link that are no follow and add it to the report and to the list
     for link_nofollow in links_nofollow:
+        no_follows.append(link_nofollow)
         report += "{0}\n".format(link_nofollow)
     # We return the report
-    return report
+    return report, no_follows
 
 
 def rule_6_hreflang(html_parser: BeautifulSoup, languages: list) -> (bool, str):
