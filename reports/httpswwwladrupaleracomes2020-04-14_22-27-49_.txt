@@ -1,0 +1,51 @@
+SEO check started at 2020-04-14_22-27-48
+[1mChecking tag title:
+[0mOnly one tag title within the tag head
+[<title>La Drupalera: Expertos en Consultoría y Desarrollo Drupal</title>]
+Title is shorter than or equal to 70 characters
+[92mOK
+
+[0m[1mChecking metatag description:
+[0mOnly one tag meta with name='description'
+[<meta content="La Drupalera es una empresa experta en Drupal: estrategia, diseño UI/UX, desarrollo, integración y mantenimiento de grandes proyectos web Drupal." name="description"/>]
+Tag meta with name = 'description' is contained within tag head
+Tag meta with name = 'description' is shorter than or equal to 155
+[92mOK
+
+[0m[1mChecking headings structure:
+[0mOnly one tag h1
+[<h1 class="header-title" id="secondary-header-title">Grandes en Drupal</h1>]
+Tag has text
+  h1: - Grandes en Drupal
+    h2: - Expertos en Consultoría y Desarrollo Drupal
+    h2: - Grandes proyectos para grandes clientes
+    h2: - Nuestras Oficinas
+      h3: - Sevilla
+      h3: - Londres
+      h3: - Santiago de Chile
+      h3: - Zürich
+    h2: - Conectados a la Comunidad Drupal
+      h3: - Cómo elegir una empresa de Desarrollo Drupal
+        h4: - Consultoría
+      h3: - Diario de Sevilla habla sobre nuestro proyecto
+        h4: - Noticias
+      h3: - Cómo puede ayudar Google Tag Manager a tu empresa
+        h4: - Analítica
+[92mOK
+
+[0m[4mChecking attribute alt in images:
+[0m[92mOK
+
+[0m[1mChecking no follow links:
+[0mNo links using the tag 'a' have attribute rel='nofollow' 
+No tags 'link' have the attribute rel='nofollow' 
+
+
+[1mChecking href and hreflang tags:
+[0mcanonical link href: ['https://www.ladrupalera.com/es']
+href: ['https://www.ladrupalera.com/es?q=www.guizhouymcg.cn'] - hreflang: es
+href: ['https://www.ladrupalera.com/en?q=www.guizhouymcg.cn'] - hreflang: en
+[92mOK
+
+[0mSEO check finished at 2020-04-14_22-27-49
+It took 0.7816591262817383 seconds
