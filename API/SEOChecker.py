@@ -210,5 +210,4 @@ def preliminar_seo_rules_check(url: str = None, browser: webdriver = None, rules
             # We add to our report the text KO in red to state that the rule in this iteration did not go well
             report += Cs.ConsoleStyles.RED + "KO\n\n" + Cs.ConsoleStyles.END
     # We return result and report
-    print(html_parser.get_text())
     return result, report
